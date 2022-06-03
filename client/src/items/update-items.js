@@ -16,7 +16,7 @@ const UpdateItems = () => {
   const UpdateItems = async(id) => {
     //{object}
 
-    Axios.put(`http://localhost:3001/items/${id}`, {
+    Axios.put(`http://localhost:3001/items/updateItems/${id}`, {
       name: newName,
       description: newDescription,
       price: newPrice,
@@ -34,7 +34,7 @@ const UpdateItems = () => {
       });
     };
     const getItems = async(id) => {
-        Axios.get(`http://localhost:3001/items/${id}`).then(async (res) => {
+        Axios.get(`http://localhost:3001/items/getItemsById/${id}`).then(async (res) => {
           setItems(res.data);
         });
       };

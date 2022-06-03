@@ -14,7 +14,7 @@ const AddUserss = () => {
   const addUsers = () => {
     //{object}
 
-    Axios.post("http://localhost:3001/user", {
+    Axios.post("http://localhost:3001/user/addUserr", {
       firstname: firstname,
       lastname: lastname,
       email: email,

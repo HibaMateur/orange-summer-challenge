@@ -11,7 +11,7 @@ const ShowUsers = () => {
   const [users, setUsers] = useState([]);
 
     const getUsers = async(id) => {
-        Axios.get(`http://localhost:3001/user/${id}`).then(async (res) => {
+        Axios.get(`http://localhost:3001/user/getByIdUserrrr/${id}`).then(async (res) => {
             setUsers(res.data);
         });
       };

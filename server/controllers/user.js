@@ -170,3 +170,46 @@ export const updateProfile= async (req,res)=>{
   return res.status(200).json(user)
 }
 
+export const updateUser = async (req, res) => {
+  try{
+    const user = await UserModal.findById(req.params.id)
+        if(req.body.firstname)
+        user.firstname =req.body.firstname
+        if(req.body.lastname)
+        user.lastname =req.body.lastname
+      
+
+      await user.save()
+      res.json(user)
+
+  }catch(err){
+      res.send('Error '+ err)
+  
+}}
+export const addUserr = async (req, res) => {
+  try{
+      const ite =  new UserModal({
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        email: req.body.email,
+        role: req.body.role,
+        password: req.body.password,
+  })
+
+      await ite.save()
+      res.json(ite)
+
+  }catch(err){
+      res.send('Error '+ err)
+  
+}}
+export const getByIdUserrrr = async (req, res) => {
+  try {   
+
+    const ite = await UserModal.findById(req.params.id);    
+    res.status(200).json(ite);
+} catch (error) {
+ 
+    res.status(404).json({ message: error.message });
+}}
+

@@ -17,7 +17,7 @@ const UpdateUsers = () => {
   const UpdateUsers = async(id) => {
     //{object}
 
-    Axios.put(`http://localhost:3001/user/${id}`, {
+    Axios.put(`http://localhost:3001/user/updateUserss/${id}`, {
         firstname: newfirstname,
         lastname: newlastname,
         email: newemail,

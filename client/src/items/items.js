@@ -14,7 +14,7 @@ function ListItems() {
     });
   };
   const deleteItems = (id) => {
-    Axios.delete(`http://localhost:3001/items/${id}`).then((response) => {
+    Axios.delete(`http://localhost:3001/items/deleteItem/${id}`).then((response) => {
       setItemsList(
         ItemsList.filter((val) => {
           return val._id !== id;

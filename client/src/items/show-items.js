@@ -13,7 +13,7 @@ const ShowItems = () => {
   const [items, setItems] = useState([]);
 
     const getItems = async(id) => {
-        Axios.get(`http://localhost:3001/items/${id}`).then(async (res) => {
+        Axios.get(`http://localhost:3001/items/getItemsById/${id}`).then(async (res) => {
           setItems(res.data);
         });
       };

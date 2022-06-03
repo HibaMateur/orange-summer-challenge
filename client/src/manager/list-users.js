@@ -13,7 +13,7 @@ function ListUsers() {
     });
   };
   const deleteUsers = (id) => {
-    Axios.delete(`http://localhost:3001/user/${id}`).then((response) => {
+    Axios.delete(`http://localhost:3001/user/deleteUser/${id}`).then((response) => {
         setUsersList(
             UsersList.filter((val) => {
           return val._id !== id;
@@ -34,8 +34,8 @@ function ListUsers() {
     <table className="table">
     <thead>
       <tr>
-        <th style={{ height: "50px" }}> Name</th>
-        <th style={{ height: "50px" }}>Price</th>
+        <th style={{ height: "50px" }}> firstname</th>
+        <th style={{ height: "50px" }}>lastname</th>
   
       </tr>
     </thead>

@@ -13,7 +13,7 @@ const AddItemss = () => {
   const addItems = () => {
     //{object}
 
-    Axios.post("http://localhost:3001/items", {
+    Axios.post("http://localhost:3001/items/addItems", {
       name: name,
       description: description,
       price: price,
