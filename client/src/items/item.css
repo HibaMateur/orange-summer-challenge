@@ -1,0 +1,20 @@
+@import "~antd/dist/antd.css";
+.CardForm {
+  border-radius: 20px;
+  top: 50px;
+  left: 440px;
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+  border-color: #8079e0;
+}
+
+.inputForm[type="text"] {
+  background: transparent;
+  border-color: #8079e0;
+  color: #284e78;
+}
+.button {
+  background-color: transparent;
+  color: #8079e0;
+  backdrop-filter: blur(6px);
+}
