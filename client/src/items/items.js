@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
-import Axios, * as others from "axios";
+import Axios from "axios";
 import { Link } from "react-router-dom";
-import { Button, Modal } from "antd";
+import { Button } from "antd";
 import "./item.css"
 
 function ListItems() {

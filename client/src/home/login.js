@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Fragment, useEffect, useState,useContext } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import {Container,Row,Col,Form,FormGroup,Label,Input} from 'reactstrap'
@@ -14,7 +15,7 @@ const Popup = () => {
     const [modal, setModal] = useState();
     const [activeTab, setActiveTab] = useState('1');
     const [postData, setPostData] = useState({ email: '', password: ''});
-    const [formErrors,setFormErrors]= useState({});
+ 
     
     const toggle = () => {
         setModal(!modal)
@@ -41,7 +42,7 @@ const Popup = () => {
     const [newUser, setNewUser] = useState({ email: '', password: '',ConfirmPass:'', firstname:'', lastName:'', role: ''});
     const [signinerr,SetSigninerr]=useState({status:'',message:''});
     const [badPass,setError]=useState({message:''});
-    const [sign_forget, setSignOrForget] = useState("");
+  
     const [buttonValue,setButtonValue]=useState("");
     const signup =(e)=> {
         e.preventDefault();

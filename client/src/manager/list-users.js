@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Axios, * as others from "axios";
+import Axios from "axios";
 import { Link } from "react-router-dom";
-import { Card, Button } from "antd";
+import {  Button } from "antd";
 
 function ListUsers() {
   const [UsersList, setUsersList] = useState([]);
@@ -30,8 +30,10 @@ function ListUsers() {
 },[]);
 
 
-  return(
+  return(<div>
+   
     <table className="table">
+  
     <thead>
       <tr>
         <th style={{ height: "50px" }}> firstname</th>
@@ -72,7 +74,7 @@ function ListUsers() {
          
             </Link>
             </tbody>
-    </table>
+    </table></div>
   )
 }
 export default ListUsers

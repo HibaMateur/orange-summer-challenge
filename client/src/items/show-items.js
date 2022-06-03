@@ -1,15 +1,12 @@
+/* eslint-disable */
 import React, { useState,useEffect } from "react";
-import Axios, * as others from "axios";
+import Axios from "axios";
 import { useParams } from "react-router";
 import { Card } from "antd";
 
 const ShowItems = () => {
 
     const {id} = useParams();
- 
-  const [newName, setnewName] = useState("");
-  const [newDescription, setnewDescription] = useState("");
-  const [itemsList, setItemsList] = useState([]);
   const [items, setItems] = useState([]);
 
     const getItems = async(id) => {

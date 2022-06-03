@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Axios, * as others from "axios";
-import { Form, Input, Button, Checkbox } from 'antd';
+import Axios from "axios";
+import { Form, Input, Button } from 'antd';
 
 const AddUserss = () => {
 

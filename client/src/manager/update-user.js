@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React, { useState,useEffect } from "react";
-import Axios, * as others from "axios";
+import Axios from "axios";
 import { useParams } from "react-router";
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 const UpdateUsers = () => {
 
